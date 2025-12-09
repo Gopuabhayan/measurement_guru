@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Measurement Guru
+Comment=A Flutter application
+Exec=measurement_guru
+Icon=app_icon
+Terminal=false
+Type=Application
+Categories=Utility;
