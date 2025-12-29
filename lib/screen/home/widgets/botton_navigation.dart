@@ -9,23 +9,27 @@ class BottomNavigation extends StatelessWidget {
     return ValueListenableBuilder(
       valueListenable: ScreenHome.selectedIndexNotifier,
       builder: (BuildContext ctx, int updatedIndex, Widget? _){
-        return BottomNavigationBar(
-          selectedItemColor: Colors.blue,
-          unselectedItemColor: Colors.grey,
-          currentIndex: updatedIndex,
-          onTap: (newIndex){
-            ScreenHome.selectedIndexNotifier.value = newIndex;
-          },
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home), 
-              label: 'calculations'
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.category), 
-              label: 'perimeter and area'
-            ),
-          ], 
+        return SizedBox(
+          height: 110,
+          child: BottomNavigationBar(
+          
+            selectedItemColor: Colors.blue,
+            unselectedItemColor: Colors.grey,
+            currentIndex: updatedIndex,
+            onTap: (newIndex){
+              ScreenHome.selectedIndexNotifier.value = newIndex;
+            },
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home), 
+                label: 'calculations'
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.category), 
+                label: 'perimeter and area'
+              ),
+            ], 
+          ),
         );
       }
     );

@@ -3,7 +3,7 @@ flutter_native_splash:
   color: "#FFFFFF"
   
   # The image will be centered on the splash screen
-  image: launcher_icon.png
+  image: launcher_icon_white_bg.png
   
   # Branding image at bottom (optional, can remove if not needed)
   # branding: assets/branding.png
@@ -11,7 +11,7 @@ flutter_native_splash:
   # Android 12+ specific settings
   android_12:
     # App icon for Android 12+
-    image: launcher_icon.png
+    image: launcher_icon_white_bg.png
     # Icon background color
     icon_background_color: "#FFFFFF"
     # Branding image
